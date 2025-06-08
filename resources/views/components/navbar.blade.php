@@ -6,9 +6,9 @@
         <div class="flex-grow flex justify-center">
             <flux:navbar>
                 <flux:navbar.item href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-blue-600 font-semibold' : '' }}">Home</flux:navbar.item>
-                <flux:navbar.item href="{{ route('dogs') }}" class="{{ request()->routeIs('dogs') ? 'text-blue-600 font-semibold' : '' }}">Dogs</flux:navbar.item>
-                <flux:navbar.item href="#" class="{{ request()->is('about') ? 'text-blue-600 font-semibold' : '' }}">About</flux:navbar.item>
-                <flux:navbar.item href="#" class="{{ request()->is('about') ? 'text-blue-600 font-semibold' : '' }}">Contact</flux:navbar.item>
+                <flux:navbar.item href="{{ route('dogs.index') }}" class="{{ request()->routeIs('dogs.index') ? 'text-blue-600 font-semibold' : '' }}">Dogs</flux:navbar.item>
+                <flux:navbar.item href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'text-blue-600 font-semibold' : '' }}">About</flux:navbar.item>
+                <flux:navbar.item href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'text-blue-600 font-semibold' : '' }}">Contact</flux:navbar.item>
             </flux:navbar>
         </div>
     </div>
